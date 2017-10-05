@@ -11,11 +11,7 @@ public class NewBehaviourScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		for (int i = 0; i < field.GetLength(0); i++) {
-			for (int j = 0; j < field.GetLength (1); j++) {
-
-			}
-		}
+		
 	}
 	
 	// Update is called once per frame
