@@ -27,8 +27,7 @@ public class Landscape : MonoBehaviour {
 		maxX = field.GetLength(0);
 		maxY = field.GetLength(1);
 
-		for (int i = 0; i < maxX; i++)
-		{
+		for (int i = 0; i < maxX; i++){
 			field[i, 0, 0] = 1;
 			field[i, 0, 1] = 1;
 			field[i, maxY-1, 0] = 1;
