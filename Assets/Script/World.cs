@@ -1,0 +1,35 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class World : MonoBehaviour
+{
+
+    int[,,] field = new int[24, 12, 2];
+
+    // Use this for initialization
+    // Generiert eine 24x12 Welt
+    void Start()
+    {
+        /*  z = 0: Block Id
+         *  z = 1: Kollision. Definition unten
+            0 = bauen & laufen
+            1 = bebaut
+            2 = nicht bauen & laufen */
+ 
+        for (int i = 0; i < field.GetLength(0); i++)
+        {
+            for (int j = 0; j < field.GetLength(1); j++)
+            {
+                field[i, j, 0] = 1;
+                field[i, j, 1] = 1;
+                //setze Gras Objekt an Koordinate (x,y) in Unity
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
